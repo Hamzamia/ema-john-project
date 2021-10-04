@@ -1,11 +1,17 @@
 import { getByAltText } from '@testing-library/dom';
 import React from 'react';
-import logo from '../../images/logo.png'
+import img from '../../images/logo.png';
+import './Header.css'
 const Header = () => {
     return (
-        <div>
+        <div className="header">
             <h2>This is header</h2>
-            <img src={logo} alt="" />
+            <img className="logo" src={img} alt="" />
+            <nav>
+                <a href="/shop">Shop</a>
+                <a href="/order">oredr</a>
+                <a href="/inventory">Inventory</a>
+            </nav>
         </div>
     );
 };
